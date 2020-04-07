@@ -9,7 +9,7 @@ package com.java.programs;
  */
 public class BubbleSort {
 	/**
-	 * Bubble sort program :--
+	 * Bubble sort program :----
 	 * 
 	 * 
 	 * 
