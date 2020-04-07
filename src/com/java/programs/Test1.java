@@ -1,8 +1,16 @@
 package com.java.programs;
 
+/**
+ * 
+ * Class is used for the Bubble Sort program
+ * 
+ * @author pradeep
+ *
+ */
+
 public class Test1 {
 	/**
-	 * Bubble sort program :--
+	 * Bubble sort program
 	 * 
 	 * 
 	 * 
