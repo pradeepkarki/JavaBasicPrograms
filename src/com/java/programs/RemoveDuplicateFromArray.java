@@ -19,7 +19,7 @@ public class RemoveDuplicateFromArray {
 		primes.add(7);
 		primes.add(11);
 
-		// let's print arraylist with duplicate
+		// let's print array list with duplicate
 		System.out.println("list of prime numbers : " + primes);
 
 		// Now let's remove duplicate element without affecting order
