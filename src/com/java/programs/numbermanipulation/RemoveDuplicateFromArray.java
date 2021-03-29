@@ -1,4 +1,4 @@
-package com.java.programs;
+package com.java.programs.numbermanipulation;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
