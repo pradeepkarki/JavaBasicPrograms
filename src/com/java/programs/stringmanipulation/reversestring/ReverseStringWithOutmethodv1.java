@@ -1,4 +1,4 @@
-package com.java.programs.stringmanipulation;
+package com.java.programs.stringmanipulation.reversestring;
 
 /**
  * 

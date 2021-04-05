@@ -1,4 +1,4 @@
-package com.java.programs.stringmanipulation;
+package com.java.programs.stringmanipulation.reversestring;
 
 /**
  * Using split("") and add to array and iterate from last character

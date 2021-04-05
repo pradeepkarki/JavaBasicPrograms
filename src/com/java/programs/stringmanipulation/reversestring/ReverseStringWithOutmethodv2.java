@@ -1,4 +1,4 @@
-package com.java.programs.stringmanipulation;
+package com.java.programs.stringmanipulation.reversestring;
 
 /**
  * Using charAt(i) to get the character iterate from end to start
