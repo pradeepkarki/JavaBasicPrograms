@@ -5,13 +5,11 @@ import java.util.Map;
 
 /**
  * 
- * Count the number of words in a string
- * 
- * 
- * @author TP00027565
+ * Count the number of letters in a string
+ *
  *
  */
-public class CountNumberOfWordsInString
+public class CountNumberOfLettersInString
 {
 
 	public static void main(String[] args)
