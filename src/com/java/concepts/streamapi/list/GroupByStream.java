@@ -25,6 +25,6 @@ public class GroupByStream {
             System.out.println(s);
             System.out.println(cars1);
         });
-
+        
     }
 }
