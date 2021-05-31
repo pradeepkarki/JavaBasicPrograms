@@ -1,9 +1,8 @@
 package com.java.concepts.collections.list.arraylist;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import javafx.print.Collation;
+
+import java.util.*;
 
 public class ArrayListExample {
 
@@ -28,6 +27,12 @@ public class ArrayListExample {
         System.out.println("Print using List Iterator");
         printArrayListUsingListIterator(arrayList);
 
+
+        //print using iterator
+        System.out.println("Print using enumeration");
+        printArrayListUsingEnumeration(arrayList);
+
+
         //setting value by replacing
         arrayList.set(1,"python");
 
@@ -39,6 +44,27 @@ public class ArrayListExample {
 
     }
 
+    /**
+     * print using ennumeratio
+     *
+     * @param arrayList - arraylist
+     */
+    private static void printArrayListUsingEnumeration(List<String> arrayList) {
+
+        Enumeration<String> en= Collections.enumeration(arrayList);
+
+        while (en.hasMoreElements())
+        {
+            System.out.println(en.nextElement());
+        }
+
+    }
+
+    /**
+     * print using ListIterator
+     *
+     * @param arrayList - arraylist
+     */
     private static void printArrayListUsingListIterator(List<String> arrayList) {
 
         ListIterator<String> listItr = arrayList.listIterator();
@@ -47,7 +73,11 @@ public class ArrayListExample {
             System.out.println(listItr.next());
         }
     }
-
+    /**
+     * print using Iterator
+     *
+     * @param arrayList - arraylist
+     */
     private static void printArrayListUsingIterator(List<String> arrayList) {
 
         Iterator<String> itr = arrayList.iterator();
@@ -57,6 +87,11 @@ public class ArrayListExample {
         }
     }
 
+    /**
+     * print using for each
+     *
+     * @param arrayList - arraylist
+     */
     private static void printArrayListUsingForEach(List<String> arrayList) {
         for (String str : arrayList)
         {
