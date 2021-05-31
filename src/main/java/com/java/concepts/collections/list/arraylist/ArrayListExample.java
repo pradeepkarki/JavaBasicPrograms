@@ -13,6 +13,7 @@ public class ArrayListExample {
         arrayList.add("learn");
         arrayList.add("java");
         arrayList.add("collection");
+        arrayList.add("with example");
 
         //print using for each
         System.out.println("Printing using for each");
@@ -39,9 +40,26 @@ public class ArrayListExample {
         //Adding to the index
         arrayList.add(1,"java");
 
+        //remove by index
+        arrayList.remove(0);
+
+        //Remove by value
+        arrayList.remove("java");
+
+        arrayList.set(1,"java");
+
         System.out.println(arrayList);
 
+        //subList example
+        getSublistOfArrayList(arrayList);
 
+    }
+
+    private static void getSublistOfArrayList(List<String> arrayList) {
+
+        System.out.println("SubList example");
+        List<String> subList=arrayList.subList(1,3);
+        System.out.println(subList);
     }
 
     /**
