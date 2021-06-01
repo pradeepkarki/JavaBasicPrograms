@@ -1,7 +1,5 @@
 package com.java.concepts.collections.list.arraylist;
 
-import javafx.print.Collation;
-
 import java.util.*;
 
 public class ArrayListExample {
@@ -26,7 +24,7 @@ public class ArrayListExample {
 
         //print using iterator
         System.out.println("Print using List Iterator");
-        printArrayListUsingListIterator(arrayList);
+        printArrayListUsingListIterator(arrayList, "FORWARD");
 
 
         //print using iterator
@@ -35,10 +33,10 @@ public class ArrayListExample {
 
 
         //setting value by replacing
-        arrayList.set(1,"python");
+        arrayList.set(1, "python");
 
         //Adding to the index
-        arrayList.add(1,"java");
+        arrayList.add(1, "java");
 
         //remove by index
         arrayList.remove(0);
@@ -46,7 +44,7 @@ public class ArrayListExample {
         //Remove by value
         arrayList.remove("java");
 
-        arrayList.set(1,"java");
+        arrayList.set(1, "java");
 
         System.out.println(arrayList);
 
@@ -58,7 +56,7 @@ public class ArrayListExample {
     private static void getSublistOfArrayList(List<String> arrayList) {
 
         System.out.println("SubList example");
-        List<String> subList=arrayList.subList(1,3);
+        List<String> subList = arrayList.subList(1, 3);
         System.out.println(subList);
     }
 
@@ -69,10 +67,9 @@ public class ArrayListExample {
      */
     private static void printArrayListUsingEnumeration(List<String> arrayList) {
 
-        Enumeration<String> en= Collections.enumeration(arrayList);
+        Enumeration<String> en = Collections.enumeration(arrayList);
 
-        while (en.hasMoreElements())
-        {
+        while (en.hasMoreElements()) {
             System.out.println(en.nextElement());
         }
 
@@ -83,14 +80,24 @@ public class ArrayListExample {
      *
      * @param arrayList - arraylist
      */
-    private static void printArrayListUsingListIterator(List<String> arrayList) {
+    private static void printArrayListUsingListIterator(List<String> arrayList, String direction) {
 
-        ListIterator<String> listItr = arrayList.listIterator();
-        while(listItr.hasNext())
-        {
-            System.out.println(listItr.next());
+        switch (direction) {
+            case "FORWARD":
+                ListIterator<String> listItr = arrayList.listIterator();
+                while (listItr.hasNext()) {
+                    System.out.println(listItr.next());
+                }
+                break;
+            case "BACKWARD":
+                ListIterator<String> lItr = arrayList.listIterator();
+                while (lItr.hasPrevious()) {
+                    System.out.println(lItr.previous());
+                }
+
         }
     }
+
     /**
      * print using Iterator
      *
@@ -99,8 +106,7 @@ public class ArrayListExample {
     private static void printArrayListUsingIterator(List<String> arrayList) {
 
         Iterator<String> itr = arrayList.iterator();
-        while(itr.hasNext())
-        {
+        while (itr.hasNext()) {
             System.out.println(itr.next());
         }
     }
@@ -111,8 +117,7 @@ public class ArrayListExample {
      * @param arrayList - arraylist
      */
     private static void printArrayListUsingForEach(List<String> arrayList) {
-        for (String str : arrayList)
-        {
+        for (String str : arrayList) {
             System.out.println(str);
         }
     }
