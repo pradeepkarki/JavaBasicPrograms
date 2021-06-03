@@ -1,9 +1,8 @@
 package com.java.concepts.collections.map.HashMap;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import javafx.print.Collation;
+
+import java.util.*;
 
 public class HashMapExample {
     public static void main(String[] args) {
@@ -44,6 +43,26 @@ public class HashMapExample {
             Map.Entry me2 = (Map.Entry) iterator.next();
             System.out.println("Key: "+me2.getKey() + " & Value: " + me2.getValue());
         }
+
+        System.out.println("----------------------------Get key and value-------------------------------------------");
+        Set<Integer> keys=hmap.keySet();
+        Collection<String> values=hmap.values();
+
+        System.out.println("****************print keys******************************");
+        Iterator<Integer> itrKeys=keys.iterator();
+        while (itrKeys.hasNext())
+        {
+            System.out.println(itrKeys.next());
+        }
+
+        System.out.println("****************print values******************************");
+        for (String str:values)
+        {
+            System.out.println(str);
+        }
+
+
+
 
     }
 }
