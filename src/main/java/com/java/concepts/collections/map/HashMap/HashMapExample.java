@@ -29,5 +29,19 @@ public class HashMapExample {
             System.out.println(mentry.getValue());;
         }
 
+        //FOR LOOP
+        System.out.println("For Loop:");
+        for (Map.Entry me : hmap.entrySet()) {
+            System.out.println("Key: "+me.getKey() + " & Value: " + me.getValue());
+        }
+
+        //WHILE LOOP & ITERATOR
+        System.out.println("While Loop:");
+        Iterator iterator = hmap.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry me2 = (Map.Entry) iterator.next();
+            System.out.println("Key: "+me2.getKey() + " & Value: " + me2.getValue());
+        }
+
     }
 }
