@@ -29,6 +29,7 @@ public class HashMapExample {
             System.out.println(mentry.getValue());;
         }
 
+        System.out.println("___________________Print Map Elements using for loop______________________");
         //FOR LOOP
         System.out.println("For Loop:");
         for (Map.Entry me : hmap.entrySet()) {
@@ -36,6 +37,7 @@ public class HashMapExample {
         }
 
         //WHILE LOOP & ITERATOR
+        System.out.println("___________________Print Map Elements using while and iterator______________________");
         System.out.println("While Loop:");
         Iterator iterator = hmap.entrySet().iterator();
         while (iterator.hasNext()) {
