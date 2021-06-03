@@ -72,7 +72,7 @@ public class LinkedListExample {
 
         /*
          Retrieves and removes the last element of this list, or returns null if this list is empty.*/
-        System.out.println("Removed element:" + linkedList.pollLast());
+        System.out.println("Removed element:" + linkedList.pollLast()) ;
 
         /*
 
