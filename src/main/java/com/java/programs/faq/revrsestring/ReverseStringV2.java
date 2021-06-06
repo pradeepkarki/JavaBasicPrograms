@@ -1,9 +1,9 @@
-package com.java.programs.faq;
+package com.java.programs.faq.revrsestring;
 
-public class ReverseStringV3 {
+public class ReverseStringV2 {
     public static void main(String[] args) {
         String str="String";
-        char[] chArr= str.toCharArray();
+        String[] chArr= str.split("");
 
         for(int i=chArr.length-1;i>=0;i--)
         {
