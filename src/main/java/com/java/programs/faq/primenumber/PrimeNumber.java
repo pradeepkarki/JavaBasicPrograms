@@ -1,4 +1,4 @@
-package com.java.programs.numbermanipulation;
+package com.java.programs.faq.primenumber;
 
 /*
  * The main method contains a loop to check prime numbers one by one.
@@ -10,30 +10,23 @@ If numberToCheckis prime, we return true.
 In the main method, check isPrime is TRUE and add to primeNumbersFound String
 Lastly, print the results
  */
-public class PrimeNumber
-{
-	public static void main(String[] args)
-	{
-		int num = 7;
-		boolean isPrime = true;
+public class PrimeNumber {
+    public static void main(String[] args) {
+		int num = 10;
+        boolean isPrime = true;
 
-		for (int i = 2; i < num / 2; i++)
-		{
-			int rem = num % i;
+        for (int i = 2; i < num / 2; i++) {
+            if (num % i == 0)
 
-			if (rem == 0)
-			{
-				isPrime = false;
-			}
-		}
+                isPrime = false;
 
-		if (isPrime)
-		{
-			System.out.println("prime number");
-		} else
-		{
-			System.out.println("Not a prime number");
-		}
+        }
 
-	}
+        if (isPrime) {
+            System.out.println("prime number");
+        } else {
+            System.out.println("Not a prime number");
+        }
+
+    }
 }
