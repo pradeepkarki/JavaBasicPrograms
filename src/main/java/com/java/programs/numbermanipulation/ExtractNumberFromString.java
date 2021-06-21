@@ -7,7 +7,7 @@ public class ExtractNumberFromString {
 
     public static void main(String[] args) {
         Pattern p = Pattern.compile("\\d+");
-        Matcher m = p.matcher("string1 more5string2");
+        Matcher m = p.matcher("string123 more1string1");
         int sum=0;
         while(m.find()) {
             sum=  sum + Integer.parseInt(m.group());

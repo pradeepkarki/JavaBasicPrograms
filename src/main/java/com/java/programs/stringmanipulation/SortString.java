@@ -5,7 +5,7 @@ import java.util.Arrays;
 class SortStringInAlphabeticalOrder {
 
     public static void main(String[] args) {
-        String str ="Java sorting program";
+        String str ="app dell cow";
 
         String[] strArray = str.split(" ");
 
@@ -14,7 +14,7 @@ class SortStringInAlphabeticalOrder {
         {
             for (int j=i+1;i< strArray.length;i++)
             {
-                if (strArray[i].compareTo(strArray[j+1])>1)
+                if (strArray[j].compareTo(strArray[j+1])>1)
                 {
                     temp = strArray[i];
                     strArray[i] = strArray[j+1];

@@ -11,7 +11,7 @@ public class MainClass {
         hdfcBan.loan();
         hdfcBan.credit();
         hdfcBan.debit();
-
+        hdfcBan.employeesSalary();
 
         //
 

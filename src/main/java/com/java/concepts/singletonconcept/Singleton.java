@@ -1,5 +1,12 @@
 package com.java.concepts.singletonconcept;
 
+/**
+ * steps to create singleton class
+ * 1.Create private constructor
+ * 2.Create public static method
+ * 3.private static class obj
+ *
+ */
 public class Singleton {
 
     /*

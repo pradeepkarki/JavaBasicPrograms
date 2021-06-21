@@ -10,7 +10,7 @@ package com.java.programs.numbermanipulation;
 public class CountNumberOfDigitInString {
 
     public static void main(String[] args) {
-        String str = "GeeksforGeeks password is : 1234";
+        String str = "GeeksforGeeks password is : 1230";
         int count = 0;
         for (int i = 0; i <= str.length() - 1; i++) {
             if (str.charAt(i) >= 48 && str.charAt(i) <= 57) {
